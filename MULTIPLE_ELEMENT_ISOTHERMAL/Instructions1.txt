@@ -1,0 +1,42 @@
+pl find attached the corrected files (prakash2d_new.for and
+
+update_ptmodel_new.for). I have commented the places with initials RN
+
+wherein I have introduced changes in the code.
+
+ I have also included an input file along with a fortran file 
+
+plscomp_mp01.for to use MP01 macro and set initial values of internal
+
+variables and BCs. A sample input file fpin_plscomp.dat is also included
+
+for running plane strain compression of a bar with perturbed cohesion
+
+value (see cohes.dat). This will simulate multiple shear bands during
+
+plane strain compression of a bar. This problem was studied by Prakash in
+
+his latest JMPS paper. Note the units used for modeling in the input file
+
+(including stress, elastic modulus etc.) is nanometers and NOT meteres or
+
+milli meters. By simulating different sizes for the bar (with respect to
+
+the free volume diffusion length scale) you can see the effect on shear
+
+band formation. You can try this problem with and without temperature
+
+evolution (isothermal and coupled case) after you have debugged the code
+
+with 1 element tests. For 1 element tests in addition to plane strain
+
+compression, also run simple shear and uniaxial compression (for this you
+
+have to use 1 axisymm element and shut off the diffusion term in free
+
+volume and temperature evolution).
+
+ BTW for axisymm case we need to take a look at the grad term and
+
+Laplacian term closely.
+

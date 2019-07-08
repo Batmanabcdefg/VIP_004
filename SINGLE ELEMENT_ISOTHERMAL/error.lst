@@ -1,0 +1,35 @@
+Microsoft (R) Incremental Linker Version 6.00.8447
+Copyright (C) Microsoft Corp 1992-1998. All rights reserved.
+
+/subsystem:console 
+/entry:mainCRTStartup 
+/ignore:505 
+/debugtype:cv 
+/debug:minimal 
+/pdb:none 
+feapl.lib 
+excdh.obj 
+prakash2d_new.obj 
+update_ptmodel_new.obj 
+smth_coupled.obj 
+tecintf_coupled.obj 
+dfor.lib 
+libc.lib 
+dfconsol.lib 
+dfport.lib 
+kernel32.lib 
+/out:feap.exe 
+/FORCE 
+feapl.lib(feaplibd.obj) : warning LNK4006: _ELMT01@72 already defined in prakash2d_new.obj; second definition ignored
+feapl.lib(feaplibd.obj) : warning LNK4006: _ELMT03@72 already defined in smth_coupled.obj; second definition ignored
+feapl.lib(feaplibd.obj) : warning LNK4006: _MA01@128 already defined in excdh.obj; second definition ignored
+feapl.lib(feaplibd.obj) : warning LNK4006: _PLOT@132 already defined in tecintf_coupled.obj; second definition ignored
+feapl.lib(feaplibd.obj) : warning LNK4006: _ELMT01 already defined in prakash2d_new.obj; second definition ignored
+feapl.lib(feaplibd.obj) : warning LNK4006: _ELMT03 already defined in smth_coupled.obj; second definition ignored
+feapl.lib(feaplibd.obj) : warning LNK4006: _MA01 already defined in excdh.obj; second definition ignored
+feapl.lib(feaplibd.obj) : warning LNK4006: _PLOT already defined in tecintf_coupled.obj; second definition ignored
+feapl.lib(pmacr1d.obj) : error LNK2001: unresolved external symbol _WATCH
+feap.exe : warning LNK4088: image being generated due to /FORCE option; image may not run
+Compaq Visual Fortran Optimizing Compiler Version 6.6 (Update A)
+Copyright 2001 Compaq Computer Corp. All rights reserved.
+

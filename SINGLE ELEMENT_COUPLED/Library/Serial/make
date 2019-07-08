@@ -1,0 +1,1 @@
+ ar -r libfeapl.lib feapd.obj pmeshd.obj pmacr1d.obj pmacr2d.obj rngstcnd.obj feaplibd.obj 

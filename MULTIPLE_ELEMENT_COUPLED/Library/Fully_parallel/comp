@@ -1,0 +1,1 @@
+pgf77 -c -pc 64 -tp k8-64 -O3 -Minfo -Mipa  -Mvect=sse -mp FEAPD.f FEAPLIBD.f  PMESHD.f RNGSTCND.f PMACR1D.f PMACR2D.f

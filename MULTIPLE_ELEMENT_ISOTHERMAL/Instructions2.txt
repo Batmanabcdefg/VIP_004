@@ -1,0 +1,42 @@
+Attached are above files. If you give
+
+PLOT             100
+
+you should get data for plotting contours of temperature, free volume, log
+plastic strain and cohesion (ql(6), ql(8), log(lamda_1^p) and ql(22)) in
+tecplt2.dat.
+
+ Please do systematic analysis of foll:
+
+With 1 element run:
+
+a) Plane strain compression
+b) uniaxial compression (axisymm element)
+c) Simple shear (plane strain)
+
+ In all above cases suppress free volume diffusion (se s_1 = 0) and heat
+conduction (set k_th = 0). Do the above corresponding to three cases
+ 1) Isothermal
+ 2) Isoconfigurational (constant free vol)
+ 3) Coupled case (both temp and free volume can evolve)
+
+
+ Do the above corresponding 3 temperatures and plot strss-strain, free
+vol-strain, temp-strain. Indrasen has developed a matlab code for getting
+solutions to simple shear problem. Pl discuss with him and see if you can
+compare your results with him.
+
+Do not send me individual jpg files. You can show me the results in the
+lab or send me a ppt file of results.
+
+ After throughly analyzing above problmes we can run multiple shear
+banding under plane strain compression and simple shear - refer to MP01
+file and mesh generation files I sent you earlier.
+
+ RN
+
+ PS: I noted that after reaching peak stress in plane strain compression
+(1 elem), the stress state becomes inhomogeneous (i.e., varies from Gauss
+point to Gauss point). This happens for both isothermal and coupled
+cases. We need to understand why this happens and also check if this
+happens for isoconfigurational case.
